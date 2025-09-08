@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAgendarContacto));
             lblContacto = new Label();
             lblNumero = new Label();
             txtContacto = new TextBox();
@@ -165,6 +166,7 @@
             Controls.Add(txtContacto);
             Controls.Add(lblNumero);
             Controls.Add(lblContacto);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAgendarContacto";
             Text = "Agendar contacto";
             ResumeLayout(false);
