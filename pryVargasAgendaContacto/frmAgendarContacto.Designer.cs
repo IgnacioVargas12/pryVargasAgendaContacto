@@ -36,6 +36,9 @@
             btnCancelar = new Button();
             lstContactos = new ListBox();
             lblCantContactos = new Label();
+            lblFecha = new Label();
+            lblContador = new Label();
+            lblRFecha = new Label();
             SuspendLayout();
             // 
             // lblContacto
@@ -113,17 +116,47 @@
             // lblCantContactos
             // 
             lblCantContactos.AutoSize = true;
-            lblCantContactos.Location = new Point(15, 364);
+            lblCantContactos.Location = new Point(7, 376);
             lblCantContactos.Name = "lblCantContactos";
-            lblCantContactos.Size = new Size(55, 15);
+            lblCantContactos.Size = new Size(126, 15);
             lblCantContactos.TabIndex = 5;
-            lblCantContactos.Text = "Cantidad";
+            lblCantContactos.Text = "Cantidad de contactos";
+            // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.Location = new Point(237, 376);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(74, 15);
+            lblFecha.TabIndex = 6;
+            lblFecha.Text = "Fecha y hora";
+            // 
+            // lblContador
+            // 
+            lblContador.AutoSize = true;
+            lblContador.Location = new Point(139, 376);
+            lblContador.Name = "lblContador";
+            lblContador.Size = new Size(22, 15);
+            lblContador.TabIndex = 7;
+            lblContador.Text = "---";
+            // 
+            // lblRFecha
+            // 
+            lblRFecha.AutoSize = true;
+            lblRFecha.Location = new Point(317, 376);
+            lblRFecha.Name = "lblRFecha";
+            lblRFecha.Size = new Size(22, 15);
+            lblRFecha.TabIndex = 8;
+            lblRFecha.Text = "---";
             // 
             // frmAgendarContacto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(374, 408);
+            ClientSize = new Size(582, 408);
+            Controls.Add(lblRFecha);
+            Controls.Add(lblContador);
+            Controls.Add(lblFecha);
             Controls.Add(lblCantContactos);
             Controls.Add(lstContactos);
             Controls.Add(btnCancelar);
@@ -148,5 +181,8 @@
         private Button btnCancelar;
         private ListBox lstContactos;
         private Label lblCantContactos;
+        private Label lblFecha;
+        private Label lblContador;
+        private Label lblRFecha;
     }
 }
