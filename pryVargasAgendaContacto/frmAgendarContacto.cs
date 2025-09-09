@@ -18,10 +18,12 @@ namespace pryVargasAgendaContacto
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            //otorgamos valor a las variables
             vContacto = txtContacto.Text;
             vNumero = mtbNumero.Text;
             vContador++;
 
+            //mostramos resultados
             lstContactos.Items.Add("Contacto: " + vContacto + "Número: " + vNumero);
             
             lblContador.Text = vContador.ToString();
@@ -31,6 +33,7 @@ namespace pryVargasAgendaContacto
             txtContacto.Text = "";
             mtbNumero.Text = "";
 
+            //guardamos datos en el array
             vecContactos[Indice] = vContacto;
             Indice++;
         }
