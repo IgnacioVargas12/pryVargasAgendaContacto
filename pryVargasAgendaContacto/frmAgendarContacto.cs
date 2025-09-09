@@ -15,6 +15,7 @@ namespace pryVargasAgendaContacto
 
         //Declaración de vector contactos y números
         string[] vecContactos = new string[5];
+        string[] vecNumeros = new string[5];
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -25,7 +26,7 @@ namespace pryVargasAgendaContacto
 
             //mostramos resultados
             lstContactos.Items.Add("Contacto: " + vContacto + "Número: " + vNumero);
-            
+
             lblContador.Text = vContador.ToString();
             lblRFecha.Text = vFecha.ToString();
 
@@ -35,7 +36,11 @@ namespace pryVargasAgendaContacto
 
             //guardamos datos en el array
             vecContactos[Indice] = vContacto;
+            vecNumeros[Indice] = vNumero;
             Indice++;
+
+            //ponemos el foco de vuelta en contacto
+            txtContacto.Focus();
         }
 
         private void txtContacto_TextChanged(object sender, EventArgs e)
@@ -67,6 +72,13 @@ namespace pryVargasAgendaContacto
         {
             txtContacto.Text = "";
             mtbNumero.Text = "";
+            txtContacto.Focus();
+
+        }
+
+        private void frmAgendarContacto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

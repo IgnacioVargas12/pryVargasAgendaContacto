@@ -46,7 +46,7 @@
             // 
             lblContacto.AutoSize = true;
             lblContacto.Font = new Font("Segoe UI", 12F);
-            lblContacto.Location = new Point(38, 35);
+            lblContacto.Location = new Point(23, 29);
             lblContacto.Name = "lblContacto";
             lblContacto.Size = new Size(72, 21);
             lblContacto.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             lblNumero.AutoSize = true;
             lblNumero.Font = new Font("Segoe UI", 12F);
-            lblNumero.Location = new Point(38, 74);
+            lblNumero.Location = new Point(23, 76);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(68, 21);
             lblNumero.TabIndex = 1;
@@ -65,7 +65,7 @@
             // txtContacto
             // 
             txtContacto.Font = new Font("Segoe UI", 12F);
-            txtContacto.Location = new Point(133, 27);
+            txtContacto.Location = new Point(118, 21);
             txtContacto.Name = "txtContacto";
             txtContacto.Size = new Size(159, 29);
             txtContacto.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             mtbNumero.Enabled = false;
             mtbNumero.Font = new Font("Segoe UI", 12F);
-            mtbNumero.Location = new Point(133, 66);
+            mtbNumero.Location = new Point(118, 68);
             mtbNumero.Mask = "(351)000-0000";
             mtbNumero.Name = "mtbNumero";
             mtbNumero.Size = new Size(159, 29);
@@ -86,7 +86,7 @@
             // 
             btnRegistrar.Enabled = false;
             btnRegistrar.Font = new Font("Segoe UI", 12F);
-            btnRegistrar.Location = new Point(206, 144);
+            btnRegistrar.Location = new Point(191, 127);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(86, 31);
             btnRegistrar.TabIndex = 2;
@@ -97,7 +97,7 @@
             // btnCancelar
             // 
             btnCancelar.Font = new Font("Segoe UI", 12F);
-            btnCancelar.Location = new Point(76, 144);
+            btnCancelar.Location = new Point(61, 127);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(85, 31);
             btnCancelar.TabIndex = 4;
@@ -109,7 +109,7 @@
             // 
             lstContactos.FormattingEnabled = true;
             lstContactos.ItemHeight = 15;
-            lstContactos.Location = new Point(38, 196);
+            lstContactos.Location = new Point(23, 179);
             lstContactos.Name = "lstContactos";
             lstContactos.Size = new Size(254, 94);
             lstContactos.TabIndex = 3;
@@ -117,7 +117,7 @@
             // lblCantContactos
             // 
             lblCantContactos.AutoSize = true;
-            lblCantContactos.Location = new Point(7, 376);
+            lblCantContactos.Location = new Point(20, 293);
             lblCantContactos.Name = "lblCantContactos";
             lblCantContactos.Size = new Size(126, 15);
             lblCantContactos.TabIndex = 5;
@@ -126,7 +126,7 @@
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(237, 376);
+            lblFecha.Location = new Point(23, 330);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(74, 15);
             lblFecha.TabIndex = 6;
@@ -135,7 +135,7 @@
             // lblContador
             // 
             lblContador.AutoSize = true;
-            lblContador.Location = new Point(139, 376);
+            lblContador.Location = new Point(152, 293);
             lblContador.Name = "lblContador";
             lblContador.Size = new Size(22, 15);
             lblContador.TabIndex = 7;
@@ -144,7 +144,7 @@
             // lblRFecha
             // 
             lblRFecha.AutoSize = true;
-            lblRFecha.Location = new Point(317, 376);
+            lblRFecha.Location = new Point(103, 330);
             lblRFecha.Name = "lblRFecha";
             lblRFecha.Size = new Size(22, 15);
             lblRFecha.TabIndex = 8;
@@ -154,7 +154,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(582, 408);
+            ClientSize = new Size(307, 364);
             Controls.Add(lblRFecha);
             Controls.Add(lblContador);
             Controls.Add(lblFecha);
@@ -168,7 +168,9 @@
             Controls.Add(lblContacto);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmAgendarContacto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Agendar contacto";
+            Load += frmAgendarContacto_Load;
             ResumeLayout(false);
             PerformLayout();
         }
