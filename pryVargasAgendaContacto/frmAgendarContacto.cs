@@ -14,8 +14,8 @@ namespace pryVargasAgendaContacto
         DateTime vFecha = DateTime.Now;
 
         //Declaración de vector contactos y números
-        string[] vecContactos = new string[5];
-        string[] vecNumeros = new string[5];
+        public string[] vecContactos = new string[5];
+        public string[] vecNumeros = new string[5];
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -25,7 +25,7 @@ namespace pryVargasAgendaContacto
             vContador++;
 
             //mostramos resultados
-            lstContactos.Items.Add("Contacto: " + vContacto + "Número: " + vNumero);
+            lstContactos.Items.Add("Contacto: " + vContacto + " " + "Número: " + vNumero);
 
             lblContador.Text = vContador.ToString();
             lblRFecha.Text = vFecha.ToString();
@@ -34,6 +34,7 @@ namespace pryVargasAgendaContacto
             txtContacto.Text = "";
             mtbNumero.Text = "";
             btnRegistrar.Enabled = false;
+            btnAbrir.Enabled = true;
 
             //guardamos datos en el array
             vecContactos[Indice] = vContacto;
@@ -81,6 +82,15 @@ namespace pryVargasAgendaContacto
         private void frmAgendarContacto_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            frmVerContactos ventanaVerContacto = new frmVerContactos();
+
+            ventanaVerContacto.vecContactos2 = vecContactos;
+
+            ventanaVerContacto.ShowDialog();
         }
     }
 }

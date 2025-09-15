@@ -160,6 +160,7 @@
             btnAbrir.TabIndex = 9;
             btnAbrir.Text = "Ver contactos";
             btnAbrir.UseVisualStyleBackColor = true;
+            btnAbrir.Click += btnAbrir_Click;
             // 
             // frmAgendarContacto
             // 
