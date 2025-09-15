@@ -40,6 +40,7 @@
             lblFecha = new Label();
             lblContador = new Label();
             lblRFecha = new Label();
+            btnAbrir = new Button();
             SuspendLayout();
             // 
             // lblContacto
@@ -150,11 +151,22 @@
             lblRFecha.TabIndex = 8;
             lblRFecha.Text = "---";
             // 
+            // btnAbrir
+            // 
+            btnAbrir.Font = new Font("Segoe UI", 12F);
+            btnAbrir.Location = new Point(240, 319);
+            btnAbrir.Name = "btnAbrir";
+            btnAbrir.Size = new Size(129, 33);
+            btnAbrir.TabIndex = 9;
+            btnAbrir.Text = "Ver contactos";
+            btnAbrir.UseVisualStyleBackColor = true;
+            // 
             // frmAgendarContacto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(307, 364);
+            ClientSize = new Size(381, 355);
+            Controls.Add(btnAbrir);
             Controls.Add(lblRFecha);
             Controls.Add(lblContador);
             Controls.Add(lblFecha);
@@ -188,5 +200,6 @@
         private Label lblFecha;
         private Label lblContador;
         private Label lblRFecha;
+        private Button btnAbrir;
     }
 }
