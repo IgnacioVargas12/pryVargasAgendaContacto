@@ -33,6 +33,7 @@ namespace pryVargasAgendaContacto
             //limpiar los controles
             txtContacto.Text = "";
             mtbNumero.Text = "";
+            btnRegistrar.Enabled = false;
 
             //guardamos datos en el array
             vecContactos[Indice] = vContacto;
@@ -73,6 +74,7 @@ namespace pryVargasAgendaContacto
             txtContacto.Text = "";
             mtbNumero.Text = "";
             txtContacto.Focus();
+            btnRegistrar.Enabled = false;
 
         }
 
