@@ -41,8 +41,15 @@ namespace pryVargasAgendaContacto
             vecNumeros[Indice] = vNumero;
             Indice++;
 
-            //ponemos el foco de vuelta en contacto
-            txtContacto.Focus();
+            //validar que no este lleno el array
+            if (Indice == 5)
+            {
+                btnRegistrar.Enabled = false;
+                MessageBox.Show("El array se encunetra lleno");
+            }
+           
+              //ponemos el foco de vuelta en contacto
+              txtContacto.Focus();
         }
 
         private void txtContacto_TextChanged(object sender, EventArgs e)
