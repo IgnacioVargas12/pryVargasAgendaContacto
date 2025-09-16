@@ -42,7 +42,7 @@ namespace pryVargasAgendaContacto
             while (indice < vecContactos2.Length && !string.IsNullOrEmpty(vecContactos2[indice]))
             {
                 //acumulamos los valores en la variable auxiliar 
-                Resultado += vecContactos2[indice] + Environment.NewLine;
+                Resultado += vecContactos2[indice] + '\n';
                 indice++;
             }
             lblDatos.Text = Resultado;
