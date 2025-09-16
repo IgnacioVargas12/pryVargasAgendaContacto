@@ -45,7 +45,7 @@ namespace pryVargasAgendaContacto
             if (Indice == 5)
             {
                 btnRegistrar.Enabled = false;
-                MessageBox.Show("El array se encunetra lleno");
+                MessageBox.Show("El array se encuentra lleno");
             }
            
               //ponemos el foco de vuelta en contacto
