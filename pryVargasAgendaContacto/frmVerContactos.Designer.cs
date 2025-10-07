@@ -111,8 +111,10 @@
             Controls.Add(btnAtras);
             Controls.Add(btnSiguiente);
             Controls.Add(lblDatos);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmVerContactos";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Listado contactos";
             Load += frmVerContactos_Load;
             ResumeLayout(false);
